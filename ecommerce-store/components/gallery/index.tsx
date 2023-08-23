@@ -27,6 +27,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
                 src={image.url}
                 alt="Image"
                 className="object-cover object-center"
+                sizes="(max-width: 640px) 100vw, 50vw"
               />
             </div>
           </Tab.Panel>
