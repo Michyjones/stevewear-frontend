@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { toast } from "react-hot-toast";
 import { X } from "lucide-react";
 
 import IconButton from "@/components/ui/icon-button";
@@ -29,6 +28,7 @@ const CartItem: React.FC<CartItemProps> = ({
           src={data.images[0].url}
           alt=""
           className="object-cover object-center"
+          sizes="(max-width: 640px) 100vw, 50vw"
         />
       </div>
       <div className="relative ml-4 flex flex-1 flex-col justify-between sm:ml-6">
