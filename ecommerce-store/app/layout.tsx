@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Urbanist } from 'next/font/google'
+import { ClerkProvider } from '@clerk/nextjs'
 
 import Navbar from '@/components/navbar'
 import Footer from '@/components/footer'
@@ -20,6 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <ClerkProvider>
     <html lang="en">
       <body className={font.className}>
         <ModalProvider />
@@ -29,5 +31,6 @@ export default function RootLayout({
         <Footer />
         </body>
     </html>
+    </ClerkProvider>
   )
 }
