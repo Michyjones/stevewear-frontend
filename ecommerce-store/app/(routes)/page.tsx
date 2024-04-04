@@ -7,7 +7,7 @@ import Container from "@/components/ui/container";
 export const revalidate = 0;
 const HomePage = async () => {
   const products = await getProducts({ isFeatured: true });
-  const billboard = await getBillboards("c889c259-e001-4263-b675-eac384610dac");
+  const billboard = await getBillboards("e2c006fc-041c-4147-9e54-b7780c283b45");
   return (
     <Container>
       <div className="space-y-10 pb-10">
